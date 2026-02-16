@@ -1,6 +1,6 @@
 // Food truck schedule data
 // Leesa updates this when Bryan forwards emails
-// NOTE: Links need manual verification - add only confirmed URLs
+// ✅ = verified via browser search
 
 const foodTrucks = [
     // 2025 Archive
@@ -20,7 +20,7 @@ const foodTrucks = [
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
         description: "Gourmet street food",
-        website: null,
+        website: null, // couldn't verify
         menu: null,
         image: null
     },
@@ -30,7 +30,7 @@ const foodTrucks = [
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
         description: "Mediterranean & Middle Eastern cuisine",
-        website: null,
+        website: null, // couldn't verify
         menu: null,
         image: null
     },
@@ -40,7 +40,7 @@ const foodTrucks = [
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
         description: "Vietnamese fusion",
-        website: null,
+        website: null, // couldn't verify
         menu: null,
         image: null
     },
@@ -50,7 +50,7 @@ const foodTrucks = [
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
         description: "Indian street food",
-        website: null,
+        website: null, // couldn't verify
         menu: null,
         image: null
     },
@@ -60,18 +60,18 @@ const foodTrucks = [
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
         description: "Slow-smoked BBQ",
-        website: null,
+        website: null, // couldn't verify
         menu: null,
         image: null
     },
     {
         date: "2025-07-02",
-        name: "Sweet Cow Moomobile",
+        name: "Sweet Cow Moomobile", // ✅ verified
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
         description: "Colorado's favorite handcrafted ice cream",
-        website: null,
-        menu: null,
+        website: "https://sweetcow.com/truck/",
+        menu: "https://sweetcow.com/order-now/",
         image: null
     },
     {
@@ -80,18 +80,18 @@ const foodTrucks = [
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
         description: "Italian cuisine",
-        website: null,
+        website: null, // couldn't verify Denver location
         menu: null,
         image: null
     },
     {
         date: "2025-06-25",
-        name: "Wafflerita",
+        name: "Wafflerita", // ✅ verified
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
         description: "Stuffed waffles on a stick - sweet & savory",
-        website: null,
-        menu: null,
+        website: "https://wafflerita.com/",
+        menu: "https://wafflerita.com/menu/",
         image: null
     }
 ];
