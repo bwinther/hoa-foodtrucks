@@ -2,6 +2,7 @@
 // Leesa updates this when Bryan forwards emails
 
 const foodTrucks = [
+    // 2026
     {
         date: "2026-02-22",
         name: "Taco Express",
@@ -28,6 +29,16 @@ const foodTrucks = [
         description: "Slow-smoked brisket, ribs, and pulled pork",
         website: "https://example.com/bbqpit",
         menu: "https://example.com/bbqpit/menu"
+    },
+    // 2025 Archive
+    {
+        date: "2025-08-27",
+        name: "Food Truck Event",
+        time: "TBD",
+        location: "Westcliff Community",
+        description: "Final Food Trucks of the Season. Fire & Police departments on site.",
+        website: null,
+        menu: null
     }
 ];
 
