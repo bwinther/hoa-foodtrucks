@@ -1,5 +1,6 @@
 // Food truck schedule data
 // Leesa updates this when Bryan forwards emails
+// NOTE: Links need manual verification - add only confirmed URLs
 
 const foodTrucks = [
     // 2025 Archive
@@ -19,8 +20,8 @@ const foodTrucks = [
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
         description: "Gourmet street food",
-        website: "https://www.uptownandhumboldt.com",
-        menu: "https://www.uptownandhumboldt.com/menu",
+        website: null,
+        menu: null,
         image: null
     },
     {
@@ -29,8 +30,8 @@ const foodTrucks = [
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
         description: "Mediterranean & Middle Eastern cuisine",
-        website: "https://www.mamakabob.com",
-        menu: "https://www.mamakabob.com/menu",
+        website: null,
+        menu: null,
         image: null
     },
     {
@@ -69,17 +70,17 @@ const foodTrucks = [
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
         description: "Colorado's favorite handcrafted ice cream",
-        website: "https://sweetcow.com",
-        menu: "https://sweetcow.com/menu",
-        image: "https://sweetcow.com/wp-content/uploads/2023/04/sweet-cow-logo.png"
+        website: null,
+        menu: null,
+        image: null
     },
     {
         date: "2025-06-25",
         name: "The Rolling Italian",
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
-        description: "Authentic Italian flavors on wheels",
-        website: "https://www.therollingitalian.com",
+        description: "Italian cuisine",
+        website: null,
         menu: null,
         image: null
     },
@@ -89,8 +90,8 @@ const foodTrucks = [
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
         description: "Stuffed waffles on a stick - sweet & savory",
-        website: "https://wafflerita.com",
-        menu: "https://wafflerita.com/#checks",
+        website: null,
+        menu: null,
         image: null
     }
 ];
