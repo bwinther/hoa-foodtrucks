@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.nav-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-btn.active {
+    background: white;
+    color: #667eea;
+    font-weight: 600;
+}
+
+main h2 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+/* Truck Cards */
+.truck-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.truck-card.past {
+    opacity: 0.7;
+}
+
+.date {
+    font-size: 0.875rem;
+    color: #667eea;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.truck-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.details {
+    display: flex;
+    gap: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.time::before { content: "🕐 "; }
+.location::before { content: "📍 "; }
+
+.description {
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+.links {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.links a {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Calendar */
+.calendar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.calendar-nav button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.calendar-nav button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#calendar-month {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-width: 150px;
+    text-align: center;
+}
+
+#calendar-grid {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+}
+
+.calendar-header {
+    text-align: center;
+    font-weight: 600;
+    color: #666;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    border-radius: 8px;
+    cursor: default;
+    position: relative;
+}
+
+.calendar-day.other-month {
+    color: #ccc;
+}
+
+.calendar-day.today {
+    background: #f0f0ff;
+    font-weight: 600;
+}
+
+.calendar-day.has-truck {
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+}
+
+.calendar-day.has-truck.past {
+    background: #a0a0c0;
+}
+
+.calendar-day.has-truck:hover {
+    transform: scale(1.1);
+}
+
+.truck-tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a1a2e;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.calendar-day.has-truck:hover .truck-tooltip {
+    display: block;
+}
+
+/* Archive */
+#archive-search {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#archive-search:focus {
+    outline: 2px solid white;
+}
+
+.archive-year {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+}
+
+/* No trucks message */
+.no-trucks {
+    background: white;
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 2rem;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 480px) {
+    body { padding: 1rem; }
+    header h1 { font-size: 1.5rem; }
+    nav { flex-wrap: wrap; }
+    .details { flex-direction: column; gap: 0.25rem; }
+    .calendar-day { font-size: 0.75rem; }
+}

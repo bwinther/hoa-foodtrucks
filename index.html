@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOA Food Trucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚚 HOA Food Trucks</h1>
+            <nav>
+                <button class="nav-btn active" data-view="upcoming">This Week</button>
+                <button class="nav-btn" data-view="calendar">Calendar</button>
+                <button class="nav-btn" data-view="archive">Archive</button>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="upcoming" class="view active">
+                <h2>This Week</h2>
+                <div id="upcoming-list"></div>
+            </section>
+            
+            <section id="calendar" class="view">
+                <h2>Calendar</h2>
+                <div class="calendar-nav">
+                    <button id="prev-month">&larr;</button>
+                    <span id="calendar-month"></span>
+                    <button id="next-month">&rarr;</button>
+                </div>
+                <div id="calendar-grid"></div>
+            </section>
+            
+            <section id="archive" class="view">
+                <h2>Archive</h2>
+                <input type="text" id="archive-search" placeholder="Search past trucks...">
+                <div id="archive-list"></div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Last updated: <span id="last-updated"></span></p>
+        </footer>
+    </div>
+    
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
