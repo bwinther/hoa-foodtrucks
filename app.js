@@ -43,13 +43,23 @@ function renderTruckCard(truck, showPastStyle = true) {
         links += '</div>';
     }
     
+    // Image or placeholder
+    const imageHtml = truck.image 
+        ? `<img class="truck-image" src="${truck.image}" alt="${truck.name}" onerror="this.outerHTML='<div class=truck-image-placeholder>🚚</div>'">`
+        : '<div class="truck-image-placeholder">🚚</div>';
+    
     return `
         <div class="truck-card${showPastStyle && past ? ' past' : ''}">
             <div class="date">${dateStr}</div>
-            <div class="truck-name">${truck.name}</div>
-            <div class="details">
-                <span class="time">${truck.time}</span>
-                <span class="location">${truck.location}</span>
+            <div class="truck-header">
+                ${imageHtml}
+                <div class="truck-info">
+                    <div class="truck-name">${truck.name}</div>
+                    <div class="details">
+                        <span class="time">${truck.time}</span>
+                        <span class="location">${truck.location}</span>
+                    </div>
+                </div>
             </div>
             ${truck.description ? `<p class="description">${truck.description}</p>` : ''}
             ${links}

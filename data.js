@@ -10,79 +10,88 @@ const foodTrucks = [
         location: "Westcliff Park",
         description: "Final Food Trucks of the Season. Fire & Police departments on site.",
         website: null,
-        menu: null
+        menu: null,
+        image: null
     },
     {
         date: "2025-07-09",
         name: "Uptown & Humboldt",
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
-        description: null,
-        website: "https://truckster.com/vendors/uptown-humboldt",
-        menu: null
+        description: "Gourmet street food",
+        website: "https://www.uptownandhumboldt.com",
+        menu: "https://www.uptownandhumboldt.com/menu",
+        image: null
     },
     {
         date: "2025-07-09",
         name: "Mama Kabob",
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
-        description: null,
-        website: "https://truckster.com/vendors/mama-kabob",
-        menu: null
+        description: "Mediterranean & Middle Eastern cuisine",
+        website: "https://www.mamakabob.com",
+        menu: "https://www.mamakabob.com/menu",
+        image: null
     },
     {
         date: "2025-07-09",
         name: "BaNomANom",
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
-        description: null,
-        website: "https://truckster.com/vendors/banomanom",
-        menu: null
+        description: "Vietnamese fusion",
+        website: null,
+        menu: null,
+        image: null
     },
     {
         date: "2025-07-02",
         name: "Charminar Express",
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
-        description: null,
-        website: "https://truckster.com/vendors/charminar-express",
-        menu: null
+        description: "Indian street food",
+        website: null,
+        menu: null,
+        image: null
     },
     {
         date: "2025-07-02",
         name: "Big Belly Brothers BBQ",
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
-        description: null,
-        website: "https://truckster.com/vendors/big-belly-brothers-bbq",
-        menu: null
+        description: "Slow-smoked BBQ",
+        website: null,
+        menu: null,
+        image: null
     },
     {
         date: "2025-07-02",
         name: "Sweet Cow Moomobile",
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
-        description: null,
-        website: "https://truckster.com/vendors/sweet-cow-moomobile",
-        menu: null
+        description: "Colorado's favorite handcrafted ice cream",
+        website: "https://sweetcow.com",
+        menu: "https://sweetcow.com/menu",
+        image: "https://sweetcow.com/wp-content/uploads/2023/04/sweet-cow-logo.png"
     },
     {
         date: "2025-06-25",
         name: "The Rolling Italian",
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
-        description: null,
-        website: "https://truckster.com/vendors/the-rolling-italian",
-        menu: null
+        description: "Authentic Italian flavors on wheels",
+        website: "https://www.therollingitalian.com",
+        menu: null,
+        image: null
     },
     {
         date: "2025-06-25",
         name: "Wafflerita",
         time: "4:30 PM - 8:00 PM",
         location: "Westcliff Park",
-        description: null,
-        website: "https://truckster.com/vendors/wafflerita",
-        menu: null
+        description: "Stuffed waffles on a stick - sweet & savory",
+        website: "https://wafflerita.com",
+        menu: "https://wafflerita.com/#checks",
+        image: null
     }
 ];
 
